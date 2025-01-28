@@ -381,7 +381,7 @@
 
             {{-- Boton de guardar --}}
             <div class="flex justify-end space-x-4 mt-4">
-                @hasrole('admin' | 'super-admin')
+                @hasrole('admin|super admin')
                     <x-button>
                         Guardar
                     </x-button>

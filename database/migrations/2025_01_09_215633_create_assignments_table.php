@@ -13,6 +13,7 @@ return new class extends Migration
             $table->foreignId('vehicle_id')->constrained()->onDelete('cascade');
             $table->foreignId('employee_id')->constrained()->onDelete('cascade');
             $table->integer('status')->default(1);
+            $table->text('comments')->nullable();
             $table->timestamp('assigned_at')->nullable();
             $table->timestamp('returned_at')->nullable();
             $table->timestamps();

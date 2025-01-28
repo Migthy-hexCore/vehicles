@@ -85,7 +85,7 @@
                 class="px-6 py-3 bg-indigo-600 dark:bg-indigo-500 text-white font-semibold rounded-lg hover:bg-indigo-700 dark:hover:bg-indigo-600 transition shadow-md">
                 Ver todos los vehículos
             </a>
-            @hasrole('admin' | 'super-admin')
+            @hasrole('admin|super admin')
                 <a href="{{ route('vehicles.edit', $vehicle) }}"
                     class="px-6 py-3 bg-blue-600 dark:bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition shadow-md">
                     Editar

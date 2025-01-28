@@ -9,7 +9,6 @@ use App\Models\Employee;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
 use App\Models\Vehicle;
-use Rappasoft\LaravelLivewireTables\Views\Columns\LinkColumn;
 use Rappasoft\LaravelLivewireTables\Views\Filters\SelectFilter;
 
 class VehicleTable extends DataTableComponent
@@ -22,6 +21,7 @@ class VehicleTable extends DataTableComponent
         'openModal' => false,
         'vehicle_id' => '',
         'employee_id' => '',
+        'comments' => '',
     ];
 
     public function mount()
@@ -153,6 +153,7 @@ class VehicleTable extends DataTableComponent
 
         $vehicle->assignments()->create([
             'employee_id' => $this->new_assignment['employee_id'],
+            'comments' => $this->new_assignment['comments'],
             'assigned_at' => now(),
         ]);
 

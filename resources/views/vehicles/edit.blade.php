@@ -404,7 +404,7 @@
                     <a href="{{ route('vehicles.index') }}" class="btn btn-indigo w-full md:w-auto text-center">
                         Regresar
                     </a>
-                    @hasrole('admin' | 'super-admin')
+                    @hasrole('admin|super admin')
                         <x-button class="w-full md:w-auto">
                             Actualizar
                         </x-button>
@@ -412,7 +412,7 @@
                 </div>
 
                 <div class="flex w-full md:w-auto">
-                    @hasrole('admin' | 'super-admin')
+                    @hasrole('admin|super admin')
                         <x-danger-button onclick="confirmDelete()" class="w-full md:w-auto">
                             Eliminar
                         </x-danger-button>

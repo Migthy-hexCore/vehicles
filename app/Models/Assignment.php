@@ -14,6 +14,7 @@ class Assignment extends Model
         'vehicle_id',
         'employee_id',
         'status',
+        'comments',
         'assigned_at',
         'returned_at',
     ];
