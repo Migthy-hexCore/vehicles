@@ -35,7 +35,7 @@
     @include('layouts.partials.sidebar')
 
     <div class="p-4 sm:ml-64">
-        <div class="mt-28">
+        <div class="mt-20">
             <div class="flex justify-between items-center">
                 @include('layouts.partials.breadcrumb')
                 @isset($action)

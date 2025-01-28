@@ -27,7 +27,7 @@
         </ol>
 
         @if (count($breadcrumbs) > 1)
-            <h6 class="mt-4 text-md font-extrabold text-gray-800 dark:text-gray-200 pl-1 md:pl-2">
+            <h6 class="mt-1 text-md font-extrabold text-gray-800 dark:text-gray-200 pl-1 md:pl-2">
                 <span
                     class="dark:bg-indigo-100 dark:text-indigo-800 font-medium uppercase px-2.5 py-0.5 rounded-full bg-indigo-900 text-indigo-100">
                     {{ end($breadcrumbs)['name'] }}
