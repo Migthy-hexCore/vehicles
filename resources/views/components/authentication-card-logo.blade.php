@@ -21,7 +21,7 @@
 
             @media (prefers-color-scheme: dark) {
                 path {
-                    fill: #004B87;
+                    fill: #748999;
                 }
             }
         </style>

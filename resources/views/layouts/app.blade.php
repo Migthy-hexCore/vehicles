@@ -25,9 +25,10 @@
 
 <body class="font-sans antialiased bg-gray-100 dark:bg-gray-700" x-data="{
     sidebarOpen: false,
-}" :class="{
-    'overflow-y-hidden': sidebarOpen
-}">
+}"
+    :class="{
+        'overflow-y-hidden': sidebarOpen
+    }">
     <div class="fixed inset-0 bg-gray-900 bg-opacity-50 z-20 sm:hidden" style="display: none;" x-show="sidebarOpen"
         x-on:click="sidebarOpen = false">
     </div>
@@ -35,7 +36,7 @@
     @include('layouts.partials.sidebar')
 
     <div class="p-4 sm:ml-64">
-        <div class="mt-20">
+        <div class="mt-28">
             <div class="flex justify-between items-center">
                 @include('layouts.partials.breadcrumb')
                 @isset($action)
@@ -44,7 +45,8 @@
                     </div>
                 @endisset
             </div>
-            <div class="p-4 mt-6 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 bg-white dark:bg-gray-300">
+            <div
+                class="p-4 mt-6 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 bg-white dark:bg-gray-300">
                 {{ $slot }}
             </div>
         </div>

@@ -15,13 +15,12 @@
 
             @media (prefers-color-scheme: dark) {
                 path {
-                    fill: #7ca4e7;
+                    fill: #a4ccec;
                 }
             }
         </style>
     </svg>
-    <span class="self-center text-xl font-semibold ms-10 sm:text-2xl whitespace-nowrap dark:text-white">
-        Secretaría del<br class="sm:hidden"> nuevo
-        comienzo
+    <span class="self-center hidden md:block text-xl font-semibold ms-10 sm:text-2xl whitespace-nowrap dark:text-white">
+        Secretaría del nuevo comienzo
     </span>
 </a>
